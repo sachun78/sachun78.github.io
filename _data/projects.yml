@@ -1,0 +1,162 @@
+- id: 8
+  title: "도서관 정보 서비스"
+  subtitle: "Full Stack 개발"
+  period: "2026.01 ~ Present"
+  team: "개인 프로젝트"
+  role: "Full Stack Developer"
+  tech_stack:
+    - "Astro"
+    - "TypeScript"
+    - "Fastify"
+    - "Supabase"
+    - "Expo React Native"
+    - "Cloudflare Pages"
+    - "GPT-4o-mini"
+  overview: "공공도서관 API 기반 도서 검색/베스트셀러 조회, AI 추천, GPS 기반 도서관 보유현황까지 제공하는 웹+모바일 통합 서비스."
+  architecture:
+    - "Cloudflare Pages (Astro Web)"
+    - "VPS Fastify API Server"
+    - "Supabase (DB/Auth/RLS)"
+    - "Expo React Native (Mobile) -> 동일 API 서버"
+  key_features:
+    - "공공도서관 API 기반 도서 검색 및 베스트셀러 조회"
+    - "AI 도서 추천 및 인사이트 요약"
+    - "GPS 기반 근처 도서관 보유 현황 검색"
+    - "회원 서재(찜), 한줄평 작성/조회"
+    - "웹 + Android/iOS 모바일 앱 동시 제공"
+  implementation:
+    - "Supabase JWT 서버 검증으로 인증 보안 강화"
+    - "Rate Limiting / CORS / RLS 보안 레이어 적용"
+    - "getAuthHeader() 패턴으로 토큰 자동 갱신 처리"
+    - "Monorepo 구조로 웹/모바일/서버 통합 관리"
+  troubleshooting:
+    - "Astro define:vars IIFE 래핑 시 GA4 전역 스코프 누락 문제를 set:html 방식으로 해결"
+    - "Cloudflare Pages 환경변수 빌드 타임 주입 이슈 해결"
+    - "JWT 리팩토링 후 프로필 수정 팝업 빈 데이터 버그 수정"
+
+- id: 7
+  title: "이스트라 Room 매니저"
+  subtitle: "Web Full Stack 개발"
+  period: "2025.02 ~ 2025.10"
+  team: "4명"
+  role: "PM / Frontend Lead (Vue.js)"
+  tech_stack:
+    - "AOSP"
+    - "Vue.js (Quasar, Vite)"
+    - "PHP"
+    - "MySQL"
+    - "JWT"
+  overview: "호텔/숙박 환경 대상 Web-Android-TV 연동 통합 관리 시스템."
+  key_contributions:
+    - "관리자 Web 콘솔 및 결제 페이지 개발"
+    - "Android 관리자 앱 및 AOSP TV 런처(WebView) 앱 구현"
+    - "Native KeyEvent -> Web Focus 브릿지 시스템 설계"
+    - "Axios Interceptor + Refresh Queue 기반 401 자동 재발급/동시성 제어"
+    - "주문 UUID 기반 Alipay/WeChat 글로벌 PG 분기 처리"
+
+- id: 6
+  title: "SK매직 공기청정기 App"
+  subtitle: "모바일 앱 개발"
+  period: "2025.05 ~ 2025.06"
+  team: "6명"
+  role: "Android App 개발 / 기술 이슈 대응"
+  tech_stack:
+    - "Kotlin"
+    - "Jetpack Compose"
+    - "BLE(GATT)"
+    - "AWS Cognito"
+    - "JTS"
+    - "OpenCV"
+    - "NDK"
+  overview: "공기청정기/로봇청정기 연동 IoT 통합 제어 모바일 앱."
+  key_contributions:
+    - "BLE GATT 기반 디바이스 프로비저닝, AES 기반 Wi-Fi 연결 프로세스 구현"
+    - "AQM/A1 디바이스 통합 제어"
+    - "JTS 기반 SLAM 지도 폴리곤 연산 및 Geometry 유효성 복원 로직 구현"
+    - "NDK 암복호화, 루팅/디버깅 탐지, 크래시 자동 재기동 로직 적용"
+
+- id: 5
+  title: "뷰티망고"
+  subtitle: "뷰티 서비스 Full Stack 개발"
+  period: "2024.05 ~ 2025.01"
+  team: "4명"
+  role: "PM / App & Backend 총괄 개발"
+  tech_stack:
+    - "Flutter"
+    - "Spring Boot 3.3"
+    - "MyBatis"
+    - "MariaDB"
+    - "JWT"
+    - "AWS S3"
+  overview: "모바일 앱부터 백엔드/인프라까지 포함한 Full Stack 프로젝트 리딩."
+  key_contributions:
+    - "Flutter 기반 Android/iOS 동시 배포"
+    - "Spring Boot 계층형 아키텍처 및 REST API/DB 스키마 설계"
+    - "PortOne 결제, FCM 푸시 시스템 구현"
+    - "Flutter Clean Architecture + Riverpod 구조 적용"
+
+- id: 4
+  title: "클로봇 박물관 큐레이팅 로봇"
+  subtitle: "AOSP 기반 서비스 개발"
+  period: "2022.05 ~ 2024.12"
+  team: "6명"
+  role: "PM / Android App 개발"
+  tech_stack:
+    - "AOSP"
+    - "Kotlin"
+  overview: "LG CLOI 기반 박물관 맞춤 안내/콘텐츠 서비스 개발."
+  key_contributions:
+    - "국립공주박물관/국회박물관 맞춤 안내 시스템 개발"
+    - "SD 카드 경로 기반 다국어 콘텐츠 연동"
+    - "퀴즈/퍼즐 인터랙티브 콘텐츠 구현"
+    - "크래시 로그 자동 저장 및 이메일 전송 핸들러 구현"
+    - "FTP 기반 원격 APK 업데이트 시스템 구축"
+
+- id: 3
+  title: "Wemet 변리사 일정 관리 시스템"
+  subtitle: "Backend 개발"
+  period: "2022.01 ~ 2022.04"
+  team: "2명"
+  role: "PM / Backend 개발"
+  tech_stack:
+    - "Node.js (Express)"
+    - "MongoDB"
+    - "TypeScript"
+  overview: "변리사 일정 관리 REST API 서버 구축 프로젝트."
+  key_contributions:
+    - "MongoDB 데이터 스키마 설계"
+    - "TypeScript 기반 서버 구조 설계 및 유지보수성 확보"
+
+- id: 2
+  title: "오토에버 해외지도 변환기"
+  subtitle: "변환기/검증 도구 개발"
+  period: "2021.11 ~ 2022.12"
+  team: "3명"
+  role: "PM & 변환기 개발"
+  tech_stack:
+    - "C"
+    - "MFC"
+    - "SQLite3"
+    - "MSSQL"
+  overview: "해외지도 원도 데이터를 센터맵 포맷으로 변환하는 도구 개발."
+  key_contributions:
+    - "검증 Viewer 개발"
+    - "통계 DB/검증 DB 생성"
+    - "CodeSonar 대응"
+
+- id: 1
+  title: "M&N Soft 고급형 6세대 내비게이션 EngineApp"
+  subtitle: "임베디드 지도 파트 개발"
+  period: "2018.10 ~ 2021.10"
+  team: "10명"
+  role: "PM / 지도 파트 개발"
+  tech_stack:
+    - "C"
+    - "Linux"
+    - "Embedded"
+  overview: "임베디드 내비게이션 엔진 앱 개발 프로젝트."
+  key_contributions:
+    - "MCOLS 이슈 해결"
+    - "지도 파트 신규 기능 개발"
+    - "Base Component 기능 연동"
+    - "CCOS API 설계 및 확장"
