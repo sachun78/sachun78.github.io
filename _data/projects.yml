@@ -12,6 +12,7 @@
     - "Expo React Native"
     - "Cloudflare Pages"
     - "GPT-4o-mini"
+  site_url: "https://library-insights.work/"
   overview: "공공도서관 API 기반 도서 검색/베스트셀러 조회, AI 추천, GPS 기반 도서관 보유현황까지 제공하는 웹+모바일 통합 서비스."
   architecture:
     - "Cloudflare Pages (Astro Web)"

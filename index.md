@@ -23,6 +23,9 @@ title: 포트폴리오
 <section class="card">
   <h3>{{ p.id }}. {{ p.title }} <small>{{ p.subtitle }}</small></h3>
   <p class="meta"><strong>기간:</strong> {{ p.period }} · <strong>인원:</strong> {{ p.team }} · <strong>역할:</strong> {{ p.role }}</p>
+  {% if p.site_url %}
+  <p><strong>서비스 링크:</strong> <a href="{{ p.site_url }}" target="_blank" rel="noopener noreferrer">{{ p.site_url }}</a></p>
+  {% endif %}
   <p><strong>개요:</strong> {{ p.overview }}</p>
 
   {% if p.tech_stack %}
